@@ -3,16 +3,16 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTH002HWYM"></script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
+    <script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TTH002HWYM');
-    </script>
+  gtag('config', 'G-TTH002HWYM');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MapOmni — Em Breve</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -28,9 +28,9 @@
         }
 
         *, *::before, *::after {
-            margin: 0;
+            /*            margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box;*/
         }
 
         html, body {
@@ -84,14 +84,14 @@
 
         /* Conteúdo */
         .wrap {
-            position: relative;
+            /*            position: relative;
             z-index: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             padding: 40px 24px;
-            max-width: 620px;
+            max-width: 620px;*/
         }
 
         /* Logo */
@@ -403,82 +403,81 @@
     </style>
 </head>
 <body>
-<div class="blob"></div>
+    <div class="container">
 
-<div class="wrap">
+        <div class="text-center">
 
-  <div class="logo">
-    <div class="logo-icon">🗺</div>
-    <span class="logo-name">MapOmni</span>
-  </div>
+            <div class="logo">
+                <div class="logo-icon">🗺</div>
+                <span class="logo-name">MapOmni</span>
+            </div>
 
-  <div class="launch-badge">
-    <div class="badge-dot"></div>
-    Grande lançamento em andamento
-  </div>
+            <div class="launch-badge">
+                <div class="badge-dot"></div>
+                Grande lançamento em andamento
+            </div>
 
-  <h1 class="headline">
-    Seu espaço em <span class="accent">3D</span>.<br>
-    Em breve na sua mão.
-  </h1>
+            <h1 class="headline">
+                Seu espaço em <span class="accent">3D</span>.<br>
+                Em breve na palma da sua mão.
+            </h1>
 
-  <p class="sub">
-    O mapa inteligente que orienta visitantes, gestores e equipes —
-    <strong>direto no navegador, sem instalar nada.</strong>
-    Estamos nos preparando para algo especial.
-  </p>
+            <p class="sub">
+                O mapa inteligente que orienta visitantes, gestores e equipes —
+                <strong>direto no navegador, sem instalar nada.</strong>
+                Estamos nos preparando para algo especial.
+            </p>
 
-  <!-- Countdown -->
-  <div class="countdown">
-    <div class="cblock"><div class="cval" id="cd-days">60</div><div class="clbl">Dias</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-hours">00</div><div class="clbl">Horas</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-mins">00</div><div class="clbl">Minutos</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-secs">00</div><div class="clbl">Segundos</div></div>
-  </div>
+            <!-- Countdown -->
+            <div class="countdown">
+                <div class="cblock"><div class="cval" id="cd-days">60</div><div class="clbl">Dias</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-hours">00</div><div class="clbl">Horas</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-mins">00</div><div class="clbl">Minutos</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-secs">00</div><div class="clbl">Segundos</div></div>
+            </div>
 
-  <!-- Progresso -->
-  <div class="progress-wrap">
-    <div class="progress-label"><span>Desenvolvimento</span><span>72% concluído</span></div>
-    <div class="progress-bar"><div class="progress-fill"></div></div>
-  </div>
+            <!-- Progresso -->
+            <div class="progress-wrap">
+                <div class="progress-label"><span>Desenvolvimento</span><span>72% concluído</span></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
 
-  <!-- Features preview -->
-  <div class="features">
-    <div class="feat"><div class="feat-icon">🗺</div>Mapa 3D navegável</div>
-    <div class="feat"><div class="feat-icon">📍</div>Onde estou?</div>
-    <div class="feat"><div class="feat-icon">🧭</div>Rotas internas</div>
-    <div class="feat"><div class="feat-icon">📲</div>Zero instalação</div>
-    <div class="feat"><div class="feat-icon">📤</div>Link direto por ponto</div>
-  </div>
+            <!-- Features preview -->
+            <div class="features">
+                <div class="feat"><div class="feat-icon">🗺</div>Mapa 3D navegável</div>
+                <div class="feat"><div class="feat-icon">📍</div>Onde estou?</div>
+                <div class="feat"><div class="feat-icon">🧭</div>Rotas internas</div>
+                <div class="feat"><div class="feat-icon">📲</div>Zero instalação</div>
+                <div class="feat"><div class="feat-icon">📤</div>Link direto por ponto</div>
+            </div>
 
-  <!-- Notify form -->
-  <div class="notify-form">
-    <input class="notify-input" type="email" id="notify-email"
-      placeholder="seu@email.com.br" autocomplete="email">
-    <button class="notify-btn" onclick="notifyMe()">Avise-me no lançamento</button>
-  </div>
-  <div class="success-msg" id="success-msg">✓ Anotado! Você será o primeiro a saber.</div>
-  <p class="notify-note">Nenhum spam. Um único email no dia do lançamento.</p>
+            <!-- Notify form -->
+            <div class="notify-form">
+                <input class="notify-input" type="email" id="notify-email"
+                       placeholder="seu@email.com.br" autocomplete="email">
+                <button class="notify-btn" onclick="notifyMe()">Avise-me no lançamento</button>
+            </div>
+            <div class="success-msg" id="success-msg">✓ Anotado! Você será o primeiro a saber.</div>
+            <p class="notify-note">Nenhum spam. Um único email no dia do lançamento.</p>
 
-  <br><br>
+            <br><br>
 
-  <div class="footer">
-    <a href="https://mapomega.com.br">MapOmega</a>
-    <div class="footer-div"></div>
-    <a href="https://deltaomni.com/br/">DeltaOmni</a>
-    <div class="footer-div"></div>
-    <a href="https://safetycross.com.br">Safety Cross</a>
-    <div class="footer-div"></div>
-    <span>© 2026 MapOmega Tecnologia</span>
-  </div>
+            <div class="footer">
+                <a href="https://mapomega.com.br">MapOmega</a>
+                <div class="footer-div"></div>
+                <a href="https://deltaomni.com/br/">DeltaOmni</a>
+                <div class="footer-div"></div>
+                <a href="https://safetycross.com.br">Safety Cross</a>
+                <div class="footer-div"></div>
+                <span>© 2026 MapOmega Tecnologia</span>
+            </div>
 
-</div>
-
-<script>
-// Countdown — 60 dias a partir de hoje
+        </div>
+    </div>
+    <script>// Countdown — 60 dias a partir de hoje
 const launch = new Date();
 launch.setDate(launch.getDate() + 60);
 launch.setHours(9,0,0,0);
@@ -516,7 +515,7 @@ async function notifyMe(){
   }
   document.querySelector('.notify-form').style.display='none';
   document.getElementById('success-msg').style.display='block';
-}
-</script>
+}</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
