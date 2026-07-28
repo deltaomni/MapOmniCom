@@ -466,9 +466,9 @@
   <br><br>
 
   <div class="footer">
-    <a href="https://mapomega.com">MapOmega</a>
+    <a href="https://mapomega.com.br">MapOmega</a>
     <div class="footer-div"></div>
-    <a href="https://deltaomni.com">DeltaOmni</a>
+    <a href="https://deltaomni.com/br/">DeltaOmni</a>
     <div class="footer-div"></div>
     <a href="https://safetycross.com.br">Safety Cross</a>
     <div class="footer-div"></div>
@@ -508,9 +508,9 @@ async function notifyMe(){
   const ENDPOINT='https://SEU-ENDPOINT.azurewebsites.net/api/captura-lead';
   try{
     await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email,origem:'mapomni.com/em-breve',ts:new Date().toISOString()})});
+      body:JSON.stringify({email,origem:'mapomni.com.br',ts:new Date().toISOString()})});
   }catch{
-    const s=encodeURIComponent('[MapOmni] Notificação de lançamento');
+    const s=encodeURIComponent('[MapOmni] Notificação de lançamento - em breve');
     const b=encodeURIComponent(`Email: ${email}`);
     window.open(`mailto:stephane@mapomega.com?subject=${s}&body=${b}`,'_blank');
   }
