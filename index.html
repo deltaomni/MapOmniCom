@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MapOmni — Coming Soon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -26,9 +27,9 @@
         }
 
         *, *::before, *::after {
-            margin: 0;
+/*            margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box;*/
         }
 
         html, body {
@@ -82,14 +83,14 @@
 
         /* Conteúdo */
         .wrap {
-            position: relative;
+/*            position: relative;
             z-index: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             padding: 40px 24px;
-            max-width: 620px;
+            max-width: 620px;*/
         }
 
         /* Logo */
@@ -401,82 +402,81 @@
     </style>
 </head>
 <body>
-<div class="blob"></div>
+    <div class="container">
 
-<div class="wrap">
+        <div class="text-center">
 
-  <div class="logo">
-    <div class="logo-icon">🗺</div>
-    <span class="logo-name">MapOmni</span>
-  </div>
+            <div class="logo">
+                <div class="logo-icon">🗺</div>
+                <span class="logo-name">MapOmni</span>
+            </div>
 
-  <div class="launch-badge">
-    <div class="badge-dot"></div>
-    Major launch underway
-  </div>
+            <div class="launch-badge">
+                <div class="badge-dot"></div>
+                Major launch underway
+            </div>
 
-  <h1 class="headline">
-    Your Space in <span class="accent">3D</span>.<br>
-    Coming soon to your hand.
-  </h1>
+            <h1 class="headline">
+                Your Space in <span class="accent">3D</span>.<br>
+                Coming soon to your hand.
+            </h1>
 
-  <p class="sub">
-    The smart map that guides visitors, managers and teams —
-    <strong>directly in the browser, no installation needed.</strong>
-    We are preparing something special.
-  </p>
+            <p class="sub">
+                The smart map that guides visitors, managers and teams —
+                <strong>directly in the browser, no installation needed.</strong>
+                We are preparing something special.
+            </p>
 
-  <!-- Countdown -->
-  <div class="countdown">
-    <div class="cblock"><div class="cval" id="cd-days">60</div><div class="clbl">Days</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-hours">00</div><div class="clbl">Hours</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-mins">00</div><div class="clbl">Minutes</div></div>
-    <div class="csep">:</div>
-    <div class="cblock"><div class="cval" id="cd-secs">00</div><div class="clbl">Seconds</div></div>
-  </div>
+            <!-- Countdown -->
+            <div class="countdown">
+                <div class="cblock"><div class="cval" id="cd-days">60</div><div class="clbl">Days</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-hours">00</div><div class="clbl">Hours</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-mins">00</div><div class="clbl">Minutes</div></div>
+                <div class="csep">:</div>
+                <div class="cblock"><div class="cval" id="cd-secs">00</div><div class="clbl">Seconds</div></div>
+            </div>
 
-  <!-- Progresso -->
-  <div class="progress-wrap">
-    <div class="progress-label"><span>Development</span><span>72% complete</span></div>
-    <div class="progress-bar"><div class="progress-fill"></div></div>
-  </div>
+            <!-- Progresso -->
+            <div class="progress-wrap">
+                <div class="progress-label"><span>Development</span><span>72% complete</span></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
 
-  <!-- Features preview -->
-  <div class="features">
-    <div class="feat"><div class="feat-icon">🗺</div>3D navigable map</div>
-    <div class="feat"><div class="feat-icon">📍</div>Where Am I?</div>
-    <div class="feat"><div class="feat-icon">🧭</div>Internal routes</div>
-    <div class="feat"><div class="feat-icon">📲</div>Zero installation</div>
-    <div class="feat"><div class="feat-icon">📤</div>Direct link by point</div>
-  </div>
+            <!-- Features preview -->
+            <div class="features">
+                <div class="feat"><div class="feat-icon">🗺</div>3D navigable map</div>
+                <div class="feat"><div class="feat-icon">📍</div>Where Am I?</div>
+                <div class="feat"><div class="feat-icon">🧭</div>Internal routes</div>
+                <div class="feat"><div class="feat-icon">📲</div>Zero installation</div>
+                <div class="feat"><div class="feat-icon">📤</div>Direct link by point</div>
+            </div>
 
-  <!-- Notify form -->
-  <div class="notify-form">
-    <input class="notify-input" type="email" id="notify-email"
-      placeholder="your@email.com" autocomplete="email">
-    <button class="notify-btn" onclick="notifyMe()">Notify me at launch</button>
-  </div>
-  <div class="success-msg" id="success-msg">✓ Anotado! Você será o primeiro a saber.</div>
-  <p class="notify-note">No spam. One single email on launch day.</p>
+            <!-- Notify form -->
+            <div class="notify-form">
+                <input class="notify-input" type="email" id="notify-email"
+                       placeholder="your@email.com" autocomplete="email">
+                <button class="notify-btn" onclick="notifyMe()">Notify me at launch</button>
+            </div>
+            <div class="success-msg" id="success-msg">✓ Anotado! Você será o primeiro a saber.</div>
+            <p class="notify-note">No spam. One single email on launch day.</p>
 
-  <br><br>
+            <br><br>
 
-  <div class="footer">
-    <a href="https://mapomega.com">MapOmega</a>
-    <div class="footer-div"></div>
-    <a href="https://deltaomni.com">DeltaOmni</a>
-    <div class="footer-div"></div>
-    <a href="https://safetycross.com.br">Safety Cross</a>
-    <div class="footer-div"></div>
-    <span>© 2026 MapOmega Technology</span>
-  </div>
+            <div class="footer">
+                <a href="https://mapomega.com">MapOmega</a>
+                <div class="footer-div"></div>
+                <a href="https://deltaomni.com">DeltaOmni</a>
+                <div class="footer-div"></div>
+                <a href="https://safetycross.com.br">Safety Cross</a>
+                <div class="footer-div"></div>
+                <span>© 2026 MapOmega Technology</span>
+            </div>
 
-</div>
-
-<script>
-// Countdown — 60 dias a partir de hoje
+        </div>
+    </div>
+    <script>// Countdown — 60 dias a partir de hoje
 const launch = new Date();
 launch.setDate(1);
 launch.setMonth(8); // Setembro é o mês 8 (0-11)
@@ -516,7 +516,7 @@ async function notifyMe(){
   }
   document.querySelector('.notify-form').style.display='none';
   document.getElementById('success-msg').style.display='block';
-}
-</script>
+}</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
