@@ -279,47 +279,6 @@
       </div>
     </div>
 
-    <!-- Countdown -->
-    <div class="row justify-content-center g-3 mb-5">
-      <div class="col-5 col-sm-3 col-md-2">
-        <div class="countdown-block text-center">
-          <div class="countdown-val" id="cd-days">60</div>
-          <div class="countdown-lbl">Dias</div>
-        </div>
-      </div>
-      <div class="col-5 col-sm-3 col-md-2">
-        <div class="countdown-block text-center">
-          <div class="countdown-val" id="cd-hours">00</div>
-          <div class="countdown-lbl">Horas</div>
-        </div>
-      </div>
-      <div class="col-5 col-sm-3 col-md-2">
-        <div class="countdown-block text-center">
-          <div class="countdown-val" id="cd-mins">00</div>
-          <div class="countdown-lbl">Minutos</div>
-        </div>
-      </div>
-      <div class="col-5 col-sm-3 col-md-2">
-        <div class="countdown-block text-center">
-          <div class="countdown-val" id="cd-secs">00</div>
-          <div class="countdown-lbl">Segundos</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Progresso -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 col-md-8 col-lg-6">
-        <div class="d-flex justify-content-between mb-2">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#8FA8B8">Desenvolvimento</span>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#8FA8B8">72% concluído</span>
-        </div>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width:72%"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- Features -->
     <div class="row justify-content-center mb-5">
       <div class="col-12 col-lg-10">
@@ -361,8 +320,6 @@
       <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
         <a href="https://mapomega.com.br" class="foot-link">MapOmega</a>
         <span class="foot-sep">·</span>
-        <a href="https://deltaomni.com/br" class="foot-link">DeltaOmni</a>
-        <span class="foot-sep">·</span>
         <a href="https://safetycross.com.br" class="foot-link">Safety Cross</a>
         <span class="foot-sep">·</span>
         <span class="foot-link">© 2026 MapOmega Tecnologia</span>
@@ -373,26 +330,6 @@
 </div>
 
 <script>
-// Countdown — 60 dias
-const launch = new Date('9/1/2026');
-//launch.setDate(launch.getDate() + 60);
-launch.setHours(9, 0, 0, 0);
-
-function tick() {
-  const diff = launch - new Date();
-  if (diff <= 0) return;
-  const d = Math.floor(diff / 86400000);
-  const h = Math.floor((diff % 86400000) / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
-  document.getElementById('cd-days').textContent  = String(d).padStart(2, '0');
-  document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
-  document.getElementById('cd-mins').textContent  = String(m).padStart(2, '0');
-  document.getElementById('cd-secs').textContent  = String(s).padStart(2, '0');
-}
-tick();
-setInterval(tick, 1000);
-
 async function notifyMe() {
   const email = document.getElementById('notify-email').value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
